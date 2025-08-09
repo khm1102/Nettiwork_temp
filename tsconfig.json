@@ -1,0 +1,19 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./*"],
+      "@nettiwork/*": ["./@nettiwork/*"],
+      "@components/*": ["./src/components/*"],
+      "@navigations/*": ["./src/navigations/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"],
+    }
+  },
+  "exclude": [
+    "./api-server",
+  ],
+}

@@ -1,0 +1,22 @@
+# OSX
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# node.js
+node_modules/
+
+# build
+dist/
+
+# env
+.env
+*.pem
+
+# npm, yarn debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

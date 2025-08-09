@@ -1,0 +1,33 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  node-js-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: yarn
+      
+      - name: Init
+        run: chmod +x init.sh && ./init.sh
+      
+      - name: api-server tsc
+        run: yarn --cwd ./api-server tsc
+      
+      - name: Run yarn lint
+        run: yarn lint
+      
+      - name: Run yarn tsc
+        run: yarn tsc

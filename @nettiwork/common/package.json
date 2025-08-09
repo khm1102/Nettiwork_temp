@@ -1,0 +1,19 @@
+{
+  "name": "@nettiwork/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "decoders": "^2.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

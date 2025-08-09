@@ -1,0 +1,8 @@
+openapi: "3.0.0"
+info:
+  title: "Nettiwork API"
+  version: "1.0.0"
+  description: "Nettiwork API Docs"
+servers:
+  - url: "http://127.0.0.1:3000"
+paths:
